@@ -1,0 +1,6 @@
+samp {
+    font-family: $samp-font-family;
+    @if mixin-exists(samp-extra-style) {
+        @include samp-extra-style();
+    }
+}
